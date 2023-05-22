@@ -1,58 +1,78 @@
 /*fonte footer*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+/*fonte navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+/*var cores*/
 :root{
-    --anzac:#DEA94B;
-    --desert:#B86225;
-    --lemongrass:#A0A496;
-    --barleycorn:#97874C;
+    --porshe: #E6A35D;
+    --mineralgreen: #446A5D;
+    --cinnabar: #E6401B;
+    --sarerac: #FFF3E0;
     --mineshaft:#383435;
     --rodeodust: #C6AC9F;
 
 }
+/*resetando as configurações padrao*/
 *{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+/*corpo pag login*/
+#login{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF7F4;
 }
 /*corpo todas as pag*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
+/*tamanho do main*/
+main{
+    height: 80vh;
+}
 /*login*/
 .box{
+    font-family: 'Julius Sans One', sans-serif;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color:rgba(56, 52, 53, 0.4);
+    background-color:rgba(56, 52, 53, 0.5);
     padding: 30px;
-    border-radius: 15px;
-    width: 20%;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 70%;
     height: 50%;
 }
+/*asterisco email*/
 em{
-    color: var(--anzac);
+    color: var(--porshe);
 }
+/*campo borda*/
 fieldset{
-    border: 3px solid var(--anzac);
+    border: 3px solid var(--porshe);
     padding: 15px;
     border-radius: 20px;
     width: 100%;
     height: 90%;
 
 }
+/*fundo "login"*/
 legend{
-    border: 1px solid var(--anzac);
+    border: 1px solid var(--porshe);
     padding: 10px;
     text-align: center;
-    background-color: var(--anzac);
+    background-color: var(--porshe);
     border-radius: 8px;
 }
+/*textbox*/
 .inputBox{
     position: relative;
 }
+/*escrito dentro da textbox*/
 .inputUser{
     background: none;
     border: none;
@@ -62,8 +82,13 @@ legend{
     font-size: 15px;
     width: 100%;
     letter-spacing: 2px;
+    padding-left: 10px;
 }
+/*texto padrao*/
 .labelInput{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -76,8 +101,9 @@ legend{
     font-size: 12px;
     color: white;
 }
+/*botao de enviar*/
 #submit{
-    background-image: linear-gradient(to right,var(--anzac), var(--desert));
+    background-color: #ebb57d;
     width: 100%;
     border: none;
     padding: 15px;
@@ -85,16 +111,20 @@ legend{
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
+    transition: 1s;
 }
 #submit:hover{
-    background-image: linear-gradient(to right,var(--anzac), var(#B86225));
+    background-color:#E6A35D;
 }
 /*navbar*/
 #menu-h{
-    background-color: #C6AC9F;
+    font-family: 'Inter', sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
+    background-color: var(--porshe);
 }
 #menu-h ul{
-    background-color: #C6AC9F;
+    background-color: var(--porshe);
     max-width: 900px;
     list-style: none;
     padding: 0;
@@ -111,12 +141,12 @@ legend{
     transition: background .3s;
 }
 #menu-h ul li a:hover{
-    background-color: #383435;
+    background-color: #b8824a;
 }
 /*entrar alinhado à direita*/
 #entrar a {
     float: right;
-    background-color:#383435;
+    background-color: #b8824a;
 }
 /*sub menu*/
 #menu-h ul ul{
@@ -142,12 +172,14 @@ footer{
     letter-spacing: 1px;
     width: 100%;
     color: white;
+    background-color: var(--mineshaft);
 }
 /*contato*/
 .footer-link{
     text-decoration: none;
 }
 #footer-content{
+    max-width: 900px;
     background-color: var(--mineshaft);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -183,29 +215,17 @@ footer{
 #whatsapp{
     background-color: #25d366;
 }
-/*listas*/
-.footer-list{
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    list-style: none;
-}
-.footer-list .footer-link{
-    color: var(--lemongrass);
-    transition: all .4s;
-}
-.footer-list .footer-link:hover{
-    color:var(--desert);
-    
-}
 /*subscriber*/
 #footer-subscriber{
-    display: flex;
+
+    display:flex;
     flex-direction: column;
+    height: 400px;
+    width: 400px;
     gap: 1.5rem;
 }
 #footer-subscriber p{
-    color: var(--lemongrass);
+    color: var(--sarerac);
 }
 #input-group{
     display: flex;
@@ -219,7 +239,7 @@ footer{
     width: 100%;
 }
 #input-group button{
-    background-color: var(--desert);
+    background-color: var(--mineralgreen);
     border: none;
     color: white;
     padding: 1.25rem;
@@ -250,13 +270,11 @@ footer{
 }
 @media screen and (max-width: 768px) {
     #menu-h{
-        grid-template-columns: repeat(2,1fr);
         gap:2rem;
     }
 }
 @media screen and (max-width: 426px){
     #menu-h{
-        grid-template-columns: repeat(1,1fr);
         padding: 3rem 2rem;
     } 
 }
