@@ -26,13 +26,8 @@ body{
 /*corpo pag login*/
 #Login-pag{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--sarerac); 
-}
-/*livros pag login*/
-#livros-fundo{
-    float: right;
-    font-size: xx-large;
-
+    background-image: url(imgs/fundo-login.png);
+    background-attachment: fixed;
 }
 /*tamanho do main*/
 main{
@@ -51,7 +46,7 @@ main{
     border-radius: 40px;
     max-width: 500px;
     width: 70%;
-    height: 50%;
+    height: 60%;
 }
 /*campo borda*/
 fieldset{
@@ -92,7 +87,7 @@ fieldset{
 /*texto padrao*/
 .labelInput{
     position: absolute;
-    top: 63px;
+    top: 61px;
     left: 35px;
     pointer-events: none;
     transition: .5s;
@@ -108,7 +103,7 @@ fieldset{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     position:absolute;
-    top: 120%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%,-50%);
     border: none;
@@ -149,9 +144,9 @@ fieldset{
 }
 #lembrar:hover{
     text-decoration:underline;
-    cursor: pointer;
 }
 input[type=checkbox] {
+    top: 2px;
     position: relative;
     cursor: pointer;
 }
@@ -179,7 +174,6 @@ input[type=checkbox]:checked:after {
     top: auto;
     left: 4px;
 }
-
 /*botao de enviar*/
 #submit{
     font-family: Arial, Helvetica, sans-serif;
@@ -195,12 +189,12 @@ input[type=checkbox]:checked:after {
     border-radius: 20px;
     transition: 1s;
     position:absolute;
-    top: 100%;
+    top: 110%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 #submit:hover{
-    background-color:#E6A35D;
+    background-color:RGB(204, 110, 86);
 }
 /*navbar*/
 #menu-h{
@@ -208,6 +202,14 @@ input[type=checkbox]:checked:after {
     font-size: .9rem;
     text-transform: uppercase;
     background-color: var(--porshe);
+}
+#logo-nav img{
+    width: 50px;
+    height: 50px;
+}
+#logo-footer{
+    width: 75px;
+    height: 75px;
 }
 #menu-h ul{
     background-color: var(--porshe);
@@ -265,14 +267,19 @@ footer{
     text-decoration: none;
 }
 #footer-content{
-    max-width: 900px;
     background-color: var(--mineshaft);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 2rem 3.5rem;
+    padding-top: 50px;
 }
 #footer-contacts h1{
     margin-bottom: 0.75rem;
+    text-align: center;
+}
+#footer-contacts p{
+    color: var(--sarerac);
+    text-align: center;
 }
 #footer-social-media{
     display: flex;
@@ -301,14 +308,28 @@ footer{
 #whatsapp{
     background-color: #25d366;
 }
+/*list*/
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    list-style: none;
+}
+.footer-list .footer-link {
+    color : var(--sarerac);
+
+}
+.footer-list .footer-link:hover{
+    color: var(--cinnabar);
+}
 /*subscriber*/
 #footer-subscriber{
-
+    float: right;
     display:flex;
     flex-direction: column;
-    height: 400px;
-    width: 400px;
     gap: 1.5rem;
+    left: 40px;
+    text-align: justify;
 }
 #footer-subscriber p{
     color: var(--sarerac);
@@ -325,7 +346,7 @@ footer{
     width: 100%;
 }
 #input-group button{
-    background-color: var(--mineralgreen);
+    background-color: var(--cinnabar);
     border: none;
     color: white;
     padding: 1.25rem;
@@ -336,7 +357,7 @@ footer{
     transition: all 0.4s;
 }
 #input-group button:hover{
-    opacity: 0.8s;
+    opacity: 0,5;
 }
 /*copyright*/
 #footer-copyright{
