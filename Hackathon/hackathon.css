@@ -33,12 +33,12 @@ body{
 }
 /*tamanho do main*/
 main{
-    height: 80vh;
+    height: 100vh;
 }
+/*topo do body*/
 #top-body{
     position: absolute;
     top: 60px;
-    background-color:#FFFBF5;
     width: 100%;
     height: 40%;
 }
@@ -59,35 +59,50 @@ main{
     text-align: left;
 }
 #livro{
-    width: 1000px;
+    width: 450px;
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 40%;
     transform: translate(-50%,-50%);
 }
 #sombra{
     width: 500px;
     position: absolute;
-    left: 50%;
-    top: 110%;
+    left: 45%;
+    top: 60%;
     transform: translate(-50%,-50%);
-    opacity: 40%;
+    opacity: 50%;
 }
-#doe{
-    font-family: 'Julius Sans One', sans-serif;
-    font-weight: 900;
-    font-size: 30px;
+/*meio do body*/
+#middle-body{
     position: absolute;
-    left: 49%;
-    top: 23%;
-    transform: translate(-50%,-50%);
-    -moz-transform: rotate(10deg);  /* FF3.5/3.6 */
-    -o-transform: rotate(10deg);  /* Opera 10.5 */
-    -webkit-transform: rotate(10deg);  /* Saf3.1+ */
-    transform: rotate(10deg);  /* Newer browsers (incl IE9) */
+    top: 420px;
+    background-color: var(--mineralgreen);
+    width: 100%;
+    height: 65%;
+    text-align: right;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
 }
-#livros-1{
-    font-family: ;
+#papel{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 1300px;
+}
+#middle-body h2{
+    position: absolute;
+    top: 140px;
+    left: 1465px;
+    text-align: justify;
+}
+#middle-body p{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    right: 100px;
+    text-align: justify;
 }
 /*login*/
 .box{
@@ -310,6 +325,7 @@ input[type=checkbox]:checked:after {
 /*footer*/
 footer{
     font-family: 'inter', sans-serif;
+    font-size: medium;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -332,6 +348,7 @@ footer{
 #footer-contacts h1{
     margin-bottom: 0.75rem;
     text-align: center;
+    font-size: 30px;
 }
 #footer-contacts p{
     color: var(--sarerac);
@@ -377,6 +394,9 @@ footer{
 }
 .footer-list .footer-link:hover{
     color: var(--cinnabar);
+}
+.footer-list h3{
+    font-size: 25px;
 }
 /*subscriber*/
 #footer-subscriber{
