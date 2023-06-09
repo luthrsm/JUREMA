@@ -1,0 +1,95 @@
+/*fonte footer*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+/*fonte navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+/*fonte "doe"*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+/*fonte "livros"*/
+/*var cores*/
+:root{
+    --porshe: #E6A35D;
+    --mineralgreen: #446A5D;
+    --cinnabar: #E6401B;
+    --sarerac: #FFF3E0;
+    --mineshaft:#383435;
+    --rodeodust: #C6AC9F;
+    --fonte-julius: 'Julius Sans One', sans-serif;
+
+
+}
+/*resetando as configurações padrao*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*pagina inicial*/
+/*topo do body*/
+#top-body{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 40%;
+}
+.linha-vertical{
+    position: absolute;
+    border-left: 4px solid var(--cinnabar);
+    border-radius: 3px;
+    height: 300px;
+    left: 15px;
+    top:40px;
+    width: 10%;
+}
+#linha-texto{
+    font-family: var(--fonte-julius);
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    text-align: left;
+}
+#livro{
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+#sombra{
+    width: 500px;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    opacity: 50%;
+}
+/*meio do body*/
+#middle-body{
+    position: absolute;
+    top: 420px;
+    background-color: var(--mineralgreen);
+    width: 100%;
+    height: 200%;
+    text-align: right;
+    font-family: var(--fonte-julius);
+    color: white;
+}
+#papel{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 1300px;
+}
+#middle-body h2{
+    position: absolute;
+    top: 140px;
+    left: 1465px;
+    text-align: justify;
+}
+#middle-body p{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    right: 100px;
+    text-align: justify;
+}
