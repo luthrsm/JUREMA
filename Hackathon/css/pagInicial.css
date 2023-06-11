@@ -44,7 +44,7 @@
     font-family: var(--fonte-julius);
     position: absolute;
     left: 5px;
-    top: 50px;
+    top: 10px;
     text-align: left;
 }
 #livro{
@@ -60,7 +60,7 @@
     left: 45%;
     top: 60%;
     transform: translate(-50%,-50%);
-    opacity: 50%;
+    opacity: 30%;
 }
 /*meio do body*/
 #middle-body{
@@ -68,28 +68,29 @@
     top: 420px;
     background-color: var(--mineralgreen);
     width: 100%;
-    height: 200%;
+    height: 60%;
     text-align: right;
     font-family: var(--fonte-julius);
     color: white;
 }
 #papel{
     position: absolute;
-    top: 40%;
+    top: 34.5%;
     left: 40%;
     transform: translate(-50%,-50%);
     width: 1300px;
+    opacity: 90%;
 }
 #middle-body h2{
     position: absolute;
-    top: 140px;
-    left: 1465px;
+    top: 25%;
+    left: 79%;
     text-align: justify;
 }
 #middle-body p{
     position: absolute;
-    top: 35%;
-    left: 60%;
+    top: 45%;
+    left: 45%;
     right: 100px;
     text-align: justify;
 }

@@ -24,8 +24,15 @@
 /*corpo pag login*/
 #Login-pag{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./imgs/fundo-login.png);
+    background-image: url(../imgs/fundo-login.png);
     background-attachment: fixed;
+}
+/*seta voltar pagInicial*/
+.arrow{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color:#fff ;
 }
 /*pagina login*/
 /*login*/
@@ -189,5 +196,5 @@ input[type=checkbox]:checked:after {
     transform: translate(-50%,-50%);
 }
 #submit:hover{
-    background-color:RGB(204, 110, 86);
+    background-color:#cc6e56c4;
 }

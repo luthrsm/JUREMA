@@ -26,7 +26,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
+main{
+    height: 205vh;
+}
 /*navbar*/
 #menu-h{
     font-family: 'Inter', sans-serif;
@@ -86,8 +88,6 @@ body{
 }
 /*footer*/
 footer{
-    position: absolute;
-    top:2000px;
     font-family: 'inter', sans-serif;
     font-size: medium;
     margin: 0;
@@ -97,6 +97,7 @@ footer{
     width: 100%;
     color: white;
     background-color: var(--mineshaft);
+    position: relative;
 }
 /*contato*/
 .footer-link{

@@ -6,44 +6,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*var cores*/
-:root{
+:root {
     --porshe: #E6A35D;
     --mineralgreen: #446A5D;
     --cinnabar: #E6401B;
     --sarerac: #FFF3E0;
-    --mineshaft:#383435;
+    --mineshaft: #383435;
     --rodeodust: #C6AC9F;
     --fonte-julius: 'Julius Sans One', sans-serif;
 
 }
+
 /*resetando as configurações padrao*/
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*pagina de compra*/
-#categoria{
-    position: relative;
-    height: 100%;
+#categoria {
+    height: auto;
     font-family: var(--fonte-julius);
     font-weight: bolder;
-    background-color: var(--mineralgreen);
-    top: -16px;
-    color: white;
+    color: var(--mineralgreen);
 }
-#menuCateg{
-    height: 80px;
+
+#menuCateg {
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
-    margin-top:-1.5rem !important;
+    margin-top: -1.5rem !important;
     margin: auto;
     justify-content: center;
 }
-#categ{
+
+#categ {
     background-color: #d9d9d87a;
     border-radius: 20px;
     height: 50px;
@@ -54,18 +55,162 @@
     transition: background .5s;
     justify-content: center;
 }
-#categ:hover{
+
+#categ:hover {
     background-color: #d9d9d8b3;
 }
-#categ a{
+
+#categ a {
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--mineralgreen);
+    font-weight: 500;
 }
-#categ p{
+
+#categ p {
     padding: 12px;
 }
-h1{
+
+h1 {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     text-align: center;
+}
+
+.container-livros {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1.5vh;
+    margin-left: 3vh;
+}
+
+.container-livros a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container-livros a:hover {
+    color: #000;
+}
+
+#individual-box1,
+#individual-box2,
+#individual-box3,
+#individual-box4,
+#individual-box5,
+#individual-box6,
+#individual-box7,
+#individual-box8,
+#individual-box9,
+#individual-box10,
+#individual-box11,
+#individual-box12,
+#individual-box13,
+#individual-box14 {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3vh;
+    margin-top: 20px !important;
+    position: relative;
+}
+
+#individual1,
+#individual2,
+#individual3,
+#individual4,
+#individual5,
+#individual6,
+#individual7 {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    width: 200px;
+    height: 250px;
+}
+
+#individual8,
+#individual9,
+#individual10,
+#individual11,
+#individual12,
+#individual13,
+#individual14 {
+    position: absolute;
+    top: 20vh;
+    left: 1vh;
+    width: 200px;
+    height: 250px;
+}
+
+#texto-individual1,
+#texto-individual2,
+#texto-individual3,
+#texto-individual4,
+#texto-individual5,
+#texto-individual6,
+#texto-individual7{
+    position: absolute;
+    top: 30vh;
+    left: 1vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+#texto-individual8,
+#texto-individual9,
+#texto-individual10,
+#texto-individual11,
+#texto-individual12,
+#texto-individual13,
+#texto-individual14{
+    position: absolute;
+    top: 50vh;
+    left: 1vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+.doar {
+    position: absolute;
+    top: 160px;
+    left: 90px;
+    width: 40%;
+    margin: 3px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    border-color: #446a5db7;
+    background-color: #446a5db7;
+    transition: all .5s;
+    padding: 2px;
+}
+.comprar{
+    position: absolute;
+    top: 160px;
+    left: -4px;
+    width: 40%;
+    margin: 3px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    border-color: #446a5db7;
+    background-color: #446a5db7;
+    transition: all .5s;
+    padding: 2px;
+}
+.doar:hover{
+    background-color: #446a5d99;
+}
+.comprar:hover{
+    background-color:#446a5d99;
 }
