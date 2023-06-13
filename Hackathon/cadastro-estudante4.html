@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro-estudante.css">
+    <title>Escolaridade</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="imgs/undraw_education_f8ru.svg" alt="">
+        </div>
+        <div class="endereco">
+            <div action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Escolaridade</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="situEscolar">Situação escolar</label>
+                        <select id="situEscolar" name="situEscolar" required>
+                            <option value=""> Selecione a sua situação escolar.</option>
+                            <option value="emComp">Já concluí o ensino médio.</option>
+                            <option value="emInc">Estou cursando o último ano/série do ensino médio.</option>
+                            <option value="emInc2">Estou cursando o ensino médio, mas não estou no último ano/série.</option>
+                            <option value="supComp">Já concluí o ensino superior.</option>
+                            <option value="supInc">Estou cursando o ensino superior.</option>
+                            <option value="naoCur">Não estou cursando nem o ensino médio nem o ensino superior.</option>
+                            <option value="naoCurInc">Não estou cursando e não concluí o ensino médio.</option>
+                            <option value="naoCurInc">Não estou cursando e não concluí o ensino superior.</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="tipoEscola">Qual o tipo de escola/faculdade que você frequenta/frequentou?</label>
+                        <select id="tipoEscola" name="tipoEscola" required>
+                            <option value=""> Selecione o tipo de escola/faculdade que você frequentou.</option>
+                            <option value="pub">Somente escola/faculdade pública.</option>
+                            <option value="pubprivsem">Parte em escola/faculdade pública parte em escola/faculdade privada SEM bolsa de estudo integral.</option>
+                            <option value="pubprivcom">Parte em escola/faculdade pública parte em escola/faculdade privada COM bolsa de estudo integral.</option>
+                            <option value="privsem">Somente em escola/faculdade privada SEM bolsa de estudo integral.</option>
+                            <option value="privcom">Somente em escola/faculdade privada COM bolsa de estudo integral.</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                            <label for="estadoFac">Digite o estado onde sua escola/faculdade se encontra</label>
+                            <input id="estadoFac" type="text" name="estadoFac" placeholder="Digite o estado" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="municFac">Digite o município onde sua escola/faculdade se encontra</label>
+                            <input id="municFac" type="text" name="municFac" placeholder="Digite o município" required>
+                    </div>
+                </div>
+                <h4>Estudante, aceite as declarações abaixo antes de prosseguir.</h4>
+                <div id="declaracao">
+                    <input type="checkbox" name="declaracao1" class="declaracao1">Confirmo que as informações que declarei são verdadeiras. Estou Ciente de que poderei ser eliminado do processo seletivo se for identificado que declarei alguma informação falsa e posso responder por crime contra a fé pública, de acordo com o Código Penal Brasileiro.</input>
+                </div>
+                <div class="continue-button">
+                    <button><a href="cadastro-estudante5.html">Continuar</a> </button>
+                </div>
+                
+
+        </div>
+    </div>
+    
+</body>
+
+</html>

@@ -23,8 +23,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/*pagina de escolha dos livros*/
 #categoria {
     height: auto;
     font-family: var(--fonte-julius);
@@ -76,7 +74,6 @@ h1 {
     text-transform: uppercase;
     text-align: center;
 }
-
 .container-livros {
     height: auto;
     width: 100%;
@@ -96,27 +93,7 @@ h1 {
     color: #000;
 }
 
-#individual-box1,
-#individual-box2,
-#individual-box3,
-#individual-box4,
-#individual-box5,
-#individual-box6,
-#individual-box7,
-#individual-box8,
-#individual-box9,
-#individual-box10,
-#individual-box11,
-#individual-box12,
-#individual-box13,
-#individual-box14,
-#individual-box15,
-#individual-box16,
-#individual-box17,
-#individual-box18,
-#individual-box19,
-#individual-box20,
-#individual-box21 {
+.individual-box {
     height: 300px;
     width: 200px;
     display: flex;
@@ -127,55 +104,15 @@ h1 {
     position: relative;
 }
 
-#individual1,
-#individual2,
-#individual3,
-#individual4,
-#individual5,
-#individual6,
-#individual7 {
+/*primeira fileira*/
+.individual-row1 {
     position: absolute;
     top: 1vh;
     left: 1vh;
     width: 200px;
     height: 250px;
 }
-
-#individual8,
-#individual9,
-#individual10,
-#individual11,
-#individual12,
-#individual13,
-#individual14 {
-    position: absolute;
-    top: 20vh;
-    left: 1vh;
-    width: 200px;
-    height: 250px;
-}
-
-#individual15,
-#individual16,
-#individual17,
-#individual18,
-#individual19,
-#individual20,
-#individual21 {
-    position: absolute;
-    top: 40vh;
-    left: 1vh;
-    width: 200px;
-    height: 250px;
-}
-
-#texto-individual1,
-#texto-individual2,
-#texto-individual3,
-#texto-individual4,
-#texto-individual5,
-#texto-individual6,
-#texto-individual7 {
+.texto-row1 {
     position: absolute;
     top: 30vh;
     left: 1vh;
@@ -184,14 +121,16 @@ h1 {
     font-size: 15px;
     text-align: left;
 }
+/*segunda fileira*/
+.individual-row2 {
+    position: absolute;
+    top: 20vh;
+    left: 1vh;
+    width: 200px;
+    height: 250px;
+}
 
-#texto-individual8,
-#texto-individual9,
-#texto-individual10,
-#texto-individual11,
-#texto-individual12,
-#texto-individual13,
-#texto-individual14 {
+.texto-row2 {
     position: absolute;
     top: 50vh;
     left: 1vh;
@@ -201,13 +140,16 @@ h1 {
     text-align: left;
 }
 
-#texto-individual15,
-#texto-individual16,
-#texto-individual17,
-#texto-individual18,
-#texto-individual19,
-#texto-individual20
-#texto-individual21 {
+/*terceira fileira*/
+.individual-row3 {
+    position: absolute;
+    top: 40vh;
+    left: 1vh;
+    width: 200px;
+    height: 250px;
+}
+
+.texto-row3 {
     position: absolute;
     top: 70vh;
     left: 1vh;

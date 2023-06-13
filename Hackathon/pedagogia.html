@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" type = "text/css" href = "./css/hackathon.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/compra.css">
         <link rel = "stylesheet" type = "text/css" href = "./css/login.css">
         <link rel = "stylesheet" type = "text/css" href = "./css/pagInicial.css">
         <link rel = "stylesheet" type = "text/css" href = "./css/estudante.css">
         <link rel = "stylesheet" type = "text/css" href = "./css/doador.css">
+        <link rel = "stylesheet" type = "text/css" href = "./css/livros.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <title>Compra</title>
@@ -59,6 +59,11 @@
                 <h1>categorias</h1>
                 <div id="menuCateg" class="container">
                     <div id="categ">
+                        <a href="livros.html">
+                            <p>Geral</p>
+                        </a>
+                    </div>
+                    <div id="categ">
                         <a href="vestibular.html">
                             <p>Vestibular</p>
                         </a>
@@ -84,11 +89,6 @@
                         </a>
                     </div>
                     <div id="categ">
-                        <a href="pedagogia.html">
-                            <p>Pedagogia</p>
-                        </a>
-                    </div>
-                    <div id="categ">
                         <a href="história.html">
                             <p>História</p>
                         </a>
@@ -96,258 +96,282 @@
                 </div>
             </div>
             <div class="container-livros" id="todos">
-                <div id="individual-box1">
+                <!--1 fileira-->
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt="" id="individual1">
-                        <div id="texto-individual1">
-                            <p>Capitães de Areiaㅤㅤㅤﾠ</p>
-                            <p>Jorge Amado</p>
-                            <h6>R$ 32,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row1">
+                        <div class="texto-row1">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box2">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual2">
-                        <div id="texto-individual2">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row1">
+                        <div class="texto-row1">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box3">
+                
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual3">
-                        <div id="texto-individual3">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row1">
+                        <div class="texto-row1">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box4">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt="" id="individual4">
-                        <div id="texto-individual4">
-                            <p>Introdução à engenharia mecânica</p>
-                            <p>Jonathan Wickert e Kemper Lewis</p>
-                            <h6>R$ 106,00</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row1">
+                        <div class="texto-row1">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box5">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt="" id="individual5">
-                        <div id="texto-individual5">
-                            <p>HTML5 e CSS3: guia prático e visual</p>
-                            <p>Elizabeth Castro e Bruce Hyslop</p>
-                            <h6>R$ 106,20</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row1">
+                        <div class="texto-row1">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box6">
+                
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt="" id="individual6">
-                        <div id="texto-individual6">
-                            <p>Capitães de Areiaㅤㅤㅤﾠ</p>
-                            <p>Jorge Amado</p>
-                            <h6>R$ 32,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row1">
+                        <div class="texto-row1">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box7">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual7">
-                        <div id="texto-individual7">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row1">
+                        <div class="texto-row1">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box8">
+
+                <!--2 fileira-->
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual8">
-                        <div id="texto-individual8">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row2">
+                        <div class="texto-row2">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box9">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt="" id="individual9">
-                        <div id="texto-individual9">
-                            <p>Introdução à engenharia mecânica</p>
-                            <p>Jonathan Wickert e Kemper Lewis</p>
-                            <h6>R$ 106,00</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row2">
+                        <div class="texto-row2">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box10">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt="" id="individual10">
-                        <div id="texto-individual10">
-                            <p>HTML5 e CSS3: guia prático e visual</p>
-                            <p>Elizabeth Castro e Bruce Hyslop</p>
-                            <h6>R$ 106,20</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row2">
+                        <div class="texto-row2">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box11">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt="" id="individual11">
-                        <div id="texto-individual11">
-                            <p>Capitães de Areiaㅤㅤㅤﾠ</p>
-                            <p>Jorge Amado</p>
-                            <h6>R$ 32,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row2">
+                        <div class="texto-row2">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box12">
+                
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual12">
-                        <div id="texto-individual12">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row2">
+                        <div class="texto-row2">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box13">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual13">
-                        <div id="texto-individual13">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row2">
+                        <div class="texto-row2">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box14">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt="" id="individual14">
-                        <div id="texto-individual14">
-                            <p>Introdução à engenharia mecânica</p>
-                            <p>Jonathan Wickert e Kemper Lewis</p>
-                            <h6>R$ 106,00</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row2">
+                        <div class="texto-row2">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box15">
+
+                <!--3 fileira-->
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt="" id="individual15">
-                        <div id="texto-individual15">
-                            <p>HTML5 e CSS3: guia prático e visual</p>
-                            <p>Elizabeth Castro e Bruce Hyslop</p>
-                            <h6>R$ 106,20</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row3">
+                        <div class="texto-row3">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box16">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt="" id="individual16">
-                        <div id="texto-individual16">
-                            <p>Capitães de Areiaㅤㅤㅤﾠ</p>
-                            <p>Jorge Amado</p>
-                            <h6>R$ 32,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row3">
+                        <div class="texto-row3">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box17">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual17">
-                        <div id="texto-individual17">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row3">
+                        <div class="texto-row3">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box18">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual18">
-                        <div id="texto-individual18">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row3">
+                        <div class="texto-row3">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box19">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt="" id="individual19">
-                        <div id="texto-individual19">
-                            <p>Introdução à engenharia mecânica</p>
-                            <p>Jonathan Wickert e Kemper Lewis</p>
-                            <h6>R$ 106,00</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row3">
+                        <div class="texto-row3">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box20">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual20">
-                        <div id="texto-individual20">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row3">
+                        <div class="texto-row3">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
-                <div id="individual-box21">
+
+                <div class="individual-box">
                     <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual21">
-                        <div id="texto-individual21">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
+                        <img src="https://cdn.record.com.br/wp-content/uploads/2019/10/25172901/18695-600x913.png" alt="" class="individual-row3">
+                        <div class="texto-row3">
+                            <p>Pedagogia do oprimido</p>
+                            <p>Paulo Freire</p>
+                            <h6>R$ 37,90</h6>
                             <input type="button" value="comprar" class="comprar"/>
                             <input type="button" value="doar" class="doar"/>
                         </div>
                     </a>
                 </div>
+
             </div>
             <div class="container" id="pagination">
                 <button class="button" disabled>
@@ -356,7 +380,7 @@
                 <button class="button" disabled>
                     <i class="fa-solid fa-angle-left"></i>
                 </button>
-
+    
                 <div class="links">
                 <a href="" class="link active">1</a>
                 <a href="" class="link">2</a>
@@ -364,7 +388,7 @@
                 <a href="" class="link">4</a>
                 <a href="" class="link">5</a>
                 </div>
-
+    
                 <button class="button">
                     <i class="fa-solid fa-angles-right"></i>
                 </button>
@@ -373,7 +397,6 @@
                 </button>
             </div>
         </main>
-
         <footer>
             <div id="footer-content">
                 <div id="footer-contacts">
@@ -432,5 +455,7 @@
                 2023 all rights reserved
             </div>
         </footer>
+
+
     </body>
 </html>
