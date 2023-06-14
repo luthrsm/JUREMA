@@ -5,8 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro-estudante.css">
-    <title>Aviso sobre ciência</title>
+    <link rel="stylesheet" href="./assets/css/cadastro-estudante.css">
+    <title>Escolaridade</title>
+    <script>
+        function assinar() {
+            window.location.href = "cadastro-estudante4.hmtl"
+        }
+
+    </script>
+    <style>
+        /*select*/
+
+        .dropDown {
+            background-color: black;
+            border-radius: 10px;
+            margin-top: 10px;
+            height: 90px;
+            width: 400px;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,79 +32,91 @@
             <img src="imgs/undraw_education_f8ru.svg" alt="">
         </div>
         <div class="endereco">
-            <form action="#">
+            <div action="#">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Informe seu endereço</h1>
+                        <h1>Escolaridade</h1>
                     </div>
                 </div>
 
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="cep">CEP</label>
-                        <input id="cep" type="text" name="cep" placeholder="Digite seu CEP" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="rua">Rua</label>
-                        <input id="rua" type="text" name="rua" placeholder="" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="bairro">Bairro</label>
-                        <input id="bairro" type="text" name="bairro" placeholder="" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="cidade">Cidade</label>
-                        <input id="cidade" type="text" name="cidade" placeholder="" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="estado">Estado</label>
-                        <input id="estado" type="text" name="estado" placeholder="" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="No">Número</label>
-                        <input id="No" type="text" name="No" placeholder="" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="complemento">Complemento</label>
-                        <input id="complemento" type="text" name="complemento" placeholder="" required>
+                <div class="input-box">
+                    <label for="categoria">Situação Escolar</label>
+                    <input type="text" name="categoria" id="categoria" placeholder="Selecione a sua situação escolar."
+                        required />
+                    <div class="dropDrown">
+                        <div class="listDropDown">
+                            <div class="item" id="item-1">Já concluí o ensino médio.</div>
+                            <div class="item" id="item-2">Estou cursando o último ano/série do ensino médio.</div>
+                            <div class="item" id="item-3">Estou cursando o ensino médio, mas não estou no último
+                                ano/série.</div>
+                            <div class="item" id="item-4">Já concluí o ensino superior.</div>
+                            <div class="item" id="item-5">Estou cursando o ensino superior.</div>
+                            <div class="item" id="item-6">Não estou cursando nem o ensino médio nem o ensino superior.
+                            </div>
+                            <div class="item" id="item-7">Não estou cursando e não concluí o ensino médio.</div>
+                            <div class="item" id="item-8">Não estou cursando e não concluí o ensino superior.</div>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="input-group">
+                    <div class="input-box">
+                        <label for="situEscolar">Situação escolar</label>
+                        <select id="situEscolar" name="situEscolar" class= "estilizar-select" required>
+                            <option value=""> </option>
+                            <option value="emComp"></option>
+                            <option value="emInc"></option>
+                            <option value="emInc2">
+                            </option>
+                            <option value="supComp"></option>
+                            <option value="supInc"></option>
+                            <option value="naoCur"></option>
+                            <option value="naoCurInc"></option>
+                            <option value="naoCurInc"></option>
+                        </select>
+                    </div> -->
 
-                <div class="continue-button">
-                    <button><a href="cadastro-estudante4.html">Continuar</a> </button>
+                <div class="input-box">
+                    <label for="tipoEscola">Qual o tipo de escola/faculdade que você frequenta/frequentou?</label>
+                    <select id="tipoEscola" name="tipoEscola" class="estilizar-select" required>
+                        <option value=""> Selecione o tipo de escola/faculdade que você frequentou.</option>
+                        <option value="pub">Somente escola/faculdade pública.</option>
+                        <option value="pubprivsem">Parte em escola/faculdade pública parte em escola/faculdade
+                            privada SEM bolsa de estudo integral.</option>
+                        <option value="pubprivcom">Parte em escola/faculdade pública parte em escola/faculdade
+                            privada COM bolsa de estudo integral.</option>
+                        <option value="privsem">Somente em escola/faculdade privada SEM bolsa de estudo integral.
+                        </option>
+                        <option value="privcom">Somente em escola/faculdade privada COM bolsa de estudo integral.
+                        </option>
+                    </select>
                 </div>
-                
-            </form>
+
+                <div class="input-box">
+                    <label for="estadoFac">Digite o estado onde sua escola/faculdade se encontra</label>
+                    <input id="estadoFac" type="text" name="estadoFac" placeholder="Digite o estado" required>
+                </div>
+                <div class="input-box">
+                    <label for="municFac">Digite o município onde sua escola/faculdade se encontra</label>
+                    <input id="municFac" type="text" name="municFac" placeholder="Digite o município" required>
+                </div>
+            </div>
+            <h4>Estudante, aceite as declarações abaixo antes de prosseguir.</h4>
+            <div class="declaracao-check">
+                <input type="checkbox" name="declaracao" id="declaracao" onclick="HabiDsabi()">Confirmo que as
+                informações que declarei são verdadeiras. Estou Ciente de que poderei ser eliminado do processo
+                seletivo se for identificado que declarei alguma informação falsa e posso responder por crime contra
+                a fé pública, de acordo com o Código Penal Brasileiro.</input>
+            </div>
+            <div class="continue-button">
+                <input type="button" class="button" name="continuar" id="continuar" value="Continuar"
+                    onclick="assinar()" disabled>
+            </div>
+
+
         </div>
     </div>
-
-    <script>
-
-        const cep = document.querySelector("input[name=cep]");
-        
-        cep.addEventListener('blur', e=> {
-            const value = cep.value.replace(/[^0-9]+/, '');
-            const url = `https://viacep.com.br/ws/${value}/json/`;
-
-            fetch(url)
-            .then(response => response.json())
-            .then(json=>{
-                if(json.logradouro){
-                    document.querySelector('input[name=rua]').value = json.logradouro;
-                    document.querySelector('input[name=bairro]').value = json.bairro;
-                    document.querySelector('input[name=cidade]').value = json.localidade;
-                    document.querySelector('input[name=estado]').value = json.uf;
-                }
-            })
-        })
-
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

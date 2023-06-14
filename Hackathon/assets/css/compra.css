@@ -1,0 +1,309 @@
+/*fonte footer*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+/*fonte navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+/*fonte poppings*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*var cores*/
+:root {
+    --porshe: #E6A35D;
+    --mineralgreen: #446A5D;
+    --cinnabar: #E6401B;
+    --sarerac: #FFF3E0;
+    --mineshaft: #383435;
+    --rodeodust: #C6AC9F;
+    --fonte-julius: 'Julius Sans One', sans-serif;
+
+}
+
+/*resetando as configurações padrao*/
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*pagina de escolha dos livros*/
+#categoria {
+    height: auto;
+    font-family: var(--fonte-julius);
+    font-weight: bolder;
+    color: var(--mineralgreen);
+}
+
+#menuCateg {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: -1.5rem !important;
+    margin: auto;
+    justify-content: center;
+}
+
+#categ {
+    background-color: #d9d9d87a;
+    border-radius: 20px;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    margin: 10px;
+    margin-top: .25rem;
+    transition: background .5s;
+    justify-content: center;
+}
+
+#categ:hover {
+    background-color: #d9d9d8b3;
+}
+
+#categ a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: var(--mineralgreen);
+    font-weight: 500;
+}
+
+#categ p {
+    padding: 12px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container-livros {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1.5vh;
+    margin-left: 3vh;
+}
+
+.container-livros a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container-livros a:hover {
+    color: #000;
+}
+
+#individual-box1,
+#individual-box2,
+#individual-box3,
+#individual-box4,
+#individual-box5,
+#individual-box6,
+#individual-box7,
+#individual-box8,
+#individual-box9,
+#individual-box10,
+#individual-box11,
+#individual-box12,
+#individual-box13,
+#individual-box14,
+#individual-box15,
+#individual-box16,
+#individual-box17,
+#individual-box18,
+#individual-box19,
+#individual-box20,
+#individual-box21 {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3vh;
+    margin-top: 20px !important;
+    position: relative;
+}
+
+#individual1,
+#individual2,
+#individual3,
+#individual4,
+#individual5,
+#individual6,
+#individual7 {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    width: 200px;
+    height: 250px;
+}
+
+#individual8,
+#individual9,
+#individual10,
+#individual11,
+#individual12,
+#individual13,
+#individual14 {
+    position: absolute;
+    top: 20vh;
+    left: 1vh;
+    width: 200px;
+    height: 250px;
+}
+
+#individual15,
+#individual16,
+#individual17,
+#individual18,
+#individual19,
+#individual20,
+#individual21 {
+    position: absolute;
+    top: 40vh;
+    left: 1vh;
+    width: 200px;
+    height: 250px;
+}
+
+#texto-individual1,
+#texto-individual2,
+#texto-individual3,
+#texto-individual4,
+#texto-individual5,
+#texto-individual6,
+#texto-individual7 {
+    position: absolute;
+    top: 30vh;
+    left: 1vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+#texto-individual8,
+#texto-individual9,
+#texto-individual10,
+#texto-individual11,
+#texto-individual12,
+#texto-individual13,
+#texto-individual14 {
+    position: absolute;
+    top: 50vh;
+    left: 1vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+#texto-individual15,
+#texto-individual16,
+#texto-individual17,
+#texto-individual18,
+#texto-individual19,
+#texto-individual20
+#texto-individual21 {
+    position: absolute;
+    top: 70vh;
+    left: 1vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+.doar {
+    position: absolute;
+    top: 160px;
+    left: 120px;
+    width: 45%;
+    margin: 3px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    background-color: var(--mineralgreen);
+    transition: all .5s;
+    padding: 5px;
+}
+
+.comprar {
+    position: absolute;
+    top: 160px;
+    left: -4px;
+    width: 50%;
+    margin: 3px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    background-color: var(--mineralgreen);
+    transition: all .5s;
+    padding: 5px;
+}
+
+.doar:hover,.comprar:hover {
+    background-color: #446a5dd3;
+}
+#pagination,
+.button,
+.links,
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagination {
+    position: relative;
+    top: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    column-gap: 12px;
+    width: fit-content;
+    height: 50px;
+}
+
+.button {
+    border: none;
+}
+
+.button:disabled{
+    color: #b3b3b3;
+    pointer-events: none;
+}
+
+.button,
+.link {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    color: #666666;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+}
+
+.links{
+    column-gap: 12px;
+}
+
+.link{
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button:hover,
+.link:hover{
+    background: var(--mineralgreen);
+    color: white;
+}
+
+.link.active{
+    background: var(--mineralgreen);
+    color: white;
+}

@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro-estudante.css">
-    <title>Aviso sobre ciência</title>
+    <link rel="stylesheet" href="./assets/css/cadastro-estudante.css">
+    <title>endereço</title>
+    <script>
+        function assinar(){
+
+            window.location.href = "cadastro-estudante3.html";
+        }
+    </script>
 </head>
 
 <body>
@@ -14,25 +20,59 @@
         <div class="form-image">
             <img src="imgs/undraw_education_f8ru.svg" alt="">
         </div>
-        <div class="aviso">
-            <h4>Prezado(a) estudante, </h4>
-            <p>Nosso projeto tem como comprimisso ajudá-lo(a) com seus materiais didáticos do ensino superior e livros frequentemente pedidos em vestibulares. Sabemos que muitos precisam parar de estudar por não ter acesso ao material necessário ou por não terem condição financeira, é por isso, que desenvolvemos esse site, para ajudar as pessoas que fazem parte da porcentagem da população que não podem "se dar o luxo" de comprar os materiais aqui fornecidos, portanto, se você não faz parte dessa parcela da população, deixe espaço para outra pessoa se beneficiar de nosso projeto, e, se tem condições de ajudar, <a href="doacao.html">clique aqui</a> para ajudar nossos estudantes. </p>
-            <p>Fique atento, você poderá solicitar ajuda de custos apenas se:</p>
-            <ul>
-                <li>Está no ultimo ano do ensino médio e prestando vestibular;</li>
-                <li>Está apenas prestando vestibular;</li>
-                <li>Está cursando o ensino superior em uma faculdade pública ou privada.</li>
-            </ul>
+        <div class="endereco">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Informe seu endereço</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" name="cep" placeholder="Digite seu CEP" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="rua">Rua</label>
+                        <input id="rua" type="text" name="rua" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="bairro">Bairro</label>
+                        <input id="bairro" type="text" name="bairro" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" type="text" name="cidade" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="estado">Estado</label>
+                        <input id="estado" type="text" name="estado" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="No">Número</label>
+                        <input id="No" type="text" name="No" placeholder="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="complemento">Complemento</label>
+                        <input id="complemento" type="text" name="complemento" placeholder="" required>
+                    </div>
+                </div>
+
                 <div class="continue-button">
-                    <button><a href="cadastro-estudante3.html">Continuar</a> </button>
+                    <input type="submit" class="button" name="continuar" id="c0ntinuar" value="Continuar" onclick="assinar()">
                 </div>
-                <div id="termos">
-                    <input type="checkbox" name="lembrar" id="lembrar" required>Eu li e concordo com os <a href="">termos de responsabilidade</a>.</input>
-                </div>
+                
             </form>
         </div>
     </div>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

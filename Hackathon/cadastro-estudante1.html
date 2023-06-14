@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro-estudante.css">
-    <title>Formulário</title>
+    <link rel="stylesheet" href="./assets/css/cadastro-estudante.css">
+    <title>Aviso sobre ciência</title>
+    <script>
+        function assinar(){
+
+            window.location.href = "cadastro-estudante2.html"
+        }
+    </script>
 </head>
 
 <body>
@@ -14,108 +20,26 @@
         <div class="form-image">
             <img src="imgs/undraw_education_f8ru.svg" alt="">
         </div>
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Cadastre-se</h1>
-                    </div>
-                    <div class="login-button">
-                        <button><a href="login.html">Entrar</a></button>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Nome completo</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome completo" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="lastname">Data de nascimento</label>
-                        <input id="birthdate" type="date" name="birthdate" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" maxlength="14" placeholder="(xx) xxxx-xxxx" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password">CPF</label>
-                        <input id="cpf" type="text" name="cpf" oninput="mascara(this)" placeholder="Digite seu CPF" required/>
-                    </div>
-
-
-                    <div class="input-box">
-                        <label for="confirmPassword">Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha" required>
-                    </div>
-
-                </div>
-
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Gênero</h6>
-                    </div>
-
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
-                            <label for="female">Feminino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
-                            <label for="male">Masculino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Outros</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="none" type="radio" name="gender">
-                            <label for="none">Prefiro não dizer</label>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="aviso">
+            <h4>Prezado(a) estudante, </h4>
+            <p>Nosso projeto tem como comprimisso ajudá-lo(a) com seus materiais didáticos do ensino superior e livros frequentemente pedidos em vestibulares. Sabemos que muitos precisam parar de estudar por não ter acesso ao material necessário ou por não terem condição financeira, é por isso, que desenvolvemos esse site, para ajudar as pessoas que fazem parte da porcentagem da população que não podem "se dar o luxo" de comprar os materiais aqui fornecidos, portanto, se você não faz parte dessa parcela da população, deixe espaço para outra pessoa se beneficiar de nosso projeto, e, se tem condições de ajudar, <a href="doacao.html">clique aqui</a> para colaborar com o projeto. </p>
+            <p>Fique atento, você poderá solicitar ajuda de custos apenas se:</p>
+            <ul>
+                <li>Está no ultimo ano do ensino médio e prestando vestibular;</li>
+                <li>Está apenas prestando vestibular;</li>
+                <li>Está cursando o ensino superior em uma faculdade pública ou privada.</li>
+            </ul>
                 <div class="continue-button">
-                    <button><a href="cadastro-estudante2.html">Continuar</a> </button>
+                    <input type="submit" class="button" name="continuar" id="continuar" value="Continuar" onclick="assinar()" disabled>
                 </div>
                 <div id="termos">
-                    <input type="checkbox" name="lembrar" id="lembrar">Eu li e concordo com os <a href="">termos de responsabilidade</a>.</input>
+                    <input type="checkbox" name="declaracao" id="declaracao" onclick="HabiDsabi()"> Estou ciente das condições impostas e estou dentro dos requisitos para participar do programa.</input>
                 </div>
             </form>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
 
-    <script>
-        function mascara(i){
-            
-            var v = i.value;
-            
-            if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-                i.value = v.substring(0, v.length-1);
-                return;
-            }
-            
-            i.setAttribute("maxlength", "14");
-            if (v.length == 3 || v.length == 7) i.value += ".";
-            if (v.length == 11) i.value += "-";
-}
-        $("#number").inputmask({
-                    mask: "(99)99999-9999",
-            });
-    </script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

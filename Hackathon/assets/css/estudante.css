@@ -1,0 +1,25 @@
+/*fonte footer*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+/*fonte navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+/*fonte "doe"*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+/*fonte "livros"*/
+/*var cores*/
+:root{
+    --porshe: #E6A35D;
+    --mineralgreen: #446A5D;
+    --cinnabar: #E6401B;
+    --sarerac: #FFF3E0;
+    --mineshaft:#383435;
+    --rodeodust: #C6AC9F;
+    --fonte-julius: 'Julius Sans One', sans-serif;
+
+
+}
+/*resetando as configurações padrao*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}

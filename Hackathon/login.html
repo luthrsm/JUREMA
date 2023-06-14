@@ -5,12 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
-        <link rel = "stylesheet" type = "text/css" href = "./css/hackathon.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/compra.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/login.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/pagInicial.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/estudante.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/doador.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/compra.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/doadorestilos.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/estudante.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/footer.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/hackathon.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/login.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/pagInicial.css">
+        <link rel="" href="">
         <title>Login</title>
     </head>
     <body id="Login-pag">
@@ -51,26 +53,6 @@
         <!-- <div id="livros-fundo">
             <img src="imgs/fundo-login.png" alt="" srcset="">
         </div> -->
-        <script>
-            function logar(){
-                var login = document.getElementById('login').value;
-                var senha = document.getElementById('senha').value;
-
-                if(login == "estudante" && senha == "estudante"){
-                    alert('sucesso')
-                    location.href = "estudante.html";
-                }
-                else{
-                    if(login == "doador" && senha =="doador"){
-                        alert ('sucesso');
-                        location.href = "doador.html";
-                    }
-                    else{
-                        alert ('Usuário ou senha incorretos');
-                    }
-                } 
-            
-            }
-        </script>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
