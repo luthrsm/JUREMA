@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/compra.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/doadorestilos.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/estudante.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/footer.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/hackathon.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/login.css">
+        <link rel = "stylesheet" type = "text/css" href = "./assets/css/pagInicial.css">
+        <title>Cadastro</title>
+    </head>
+    <body id="Login-pag">
+        <a href="inicio.html" class="arrow" id="left-arrow">
+            <i class="fa-solid fa-chevron-left fa-2xl"></i>
+        </a>
+        <div class="box">
+            <form>
+                <fieldset>
+                    <div class="inputBox">
+                        <a class="icon-login" id="envelope">
+                            <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                        </a>
+                        <input type="text" name="login" id="login" class="inputUser" required>
+                        <label for="login" class="labelInput">Email</label>
+                    </div>
+                    <br>
+                    <a class="icon-login" id="cadeado">
+                        <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
+                    </a>
+                    <div class="inputBox">
+                        <input type="password" name="senha" id="senha" class="inputUser" required>                        
+                        <label for="senha" class="labelInput">Senha</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="senha" id="senha" class="inputUser" required>                        
+                        <label for="senha" class="labelInput">Confirmar Senha</label>
+                    </div>
+                    <br>
+                    <input type="submit" name="submit" id="submit" onclick="logar(); return false">
+                    <div id="recover-password">
+                        <button type="button" class="clear" id="recoverpassword">Login</button>
+                    </div>
+                    <br><br>
+                </fieldset>
+            </form>
+        </div>
+        <!-- <div id="livros-fundo">
+            <img src="imgs/fundo-login.png" alt="" srcset="">
+        </div> -->
+    </body>
+</html>

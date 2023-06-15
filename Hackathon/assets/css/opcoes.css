@@ -1,0 +1,64 @@
+#pix {
+  background-color: #C5C5BC;
+  color: #1B372D;
+  border: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: bold;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+#cartao {
+  background-color: #C5C5BC;
+  color: #1B372D;
+  border: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: bold;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+#boleto {
+  background-color: #C5C5BC;
+  color: #1B372D;
+  border: none;
+  border-radius: 60px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: bold;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+#botoesopcao {
+  height: 100%;
+  margin: 0;
+}
+
+#botoesopcao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#botoesopcao>div {
+  text-align: center;
+}
+
+body {
+  background-image: url(/assets/imgs/fundo-login.png);
+}

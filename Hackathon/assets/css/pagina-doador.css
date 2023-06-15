@@ -2,34 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 /*fonte navbar*/
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-/*fonte "doe"*/
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
-/*fonte "livros"*/
+/*fonte poppings*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*var cores*/
-:root{
+:root {
     --porshe: #E6A35D;
     --mineralgreen: #446A5D;
     --cinnabar: #E6401B;
     --sarerac: #FFF3E0;
-    --mineshaft:#383435;
+    --mineshaft: #383435;
     --rodeodust: #C6AC9F;
     --fonte-julius: 'Julius Sans One', sans-serif;
 
 }
-/*resetando as configurações padrao*/
+
+body{
+    overflow-x: hidden;
+}
+
 *{
     margin: 0 auto;
     padding: 0;
+    font-family:var(--fonte-julius);
     box-sizing: border-box;
 }
-/*corpo todas as pag*/
-body{
-    font-family: Arial, Helvetica, sans-serif;
+
+img{
+    width: 100%;
+    height: 100%;
 }
-main{
-    height: 205vh;
-}
-/*navbar*/
+
 #menu-h{
     font-family: 'Inter', sans-serif;
     font-size: .9rem;
@@ -38,22 +41,23 @@ main{
     position: relative;
     z-index: 10;
 }
+
 #logo-nav img{
-    position: absolute;
-    top: -6px;
-    left: -40px;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
+
 #logo-footer{
     width: 75px;
     height: 75px;
 }
+
 #menu-h ul{
     background-color: var(--porshe);
     max-width: 900px;
     list-style: none;
     padding: 0;
+    display: flex;
 }
 #menu-h ul li{
     display: inline;
@@ -89,30 +93,146 @@ main{
 #menu-h ul ul li a{
     display: block;
 }
+
+.main-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container-branco{
+    width: 100%;
+    height: 370px;
+    padding-top: 60px;
+    max-width: 1200px;
+    position: relative;
+}
+
+.container-img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 200px;
+    margin-top: 80px;
+}
+
+.container-branco h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.texto-esquerdo{
+    width: 150px;
+    position: absolute;
+    border-left: 4px solid #E6401B;
+    padding-left: 10px;
+    left: 20px;
+}
+
+.texto-esquerdo p{
+    font-size: 15px;
+    text-align: left;
+}
+
+.container-verde{
+    width: 100%;
+    height: 500px;
+    background-color: #2e4d42;
+    color: white;
+    
+}
+
+.container-name{
+    width: 100%;
+    padding: 25px;
+    display: grid;
+    place-items: center;
+    padding-top: 100px;
+}
+
+.container-name label{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.container-dados{
+    padding-left: 100px;
+}
+
+.container-dados h3{
+    font-size: 25px;
+}
+
+.container-dados p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.linha-laranja{
+    margin-top: 10px;
+    width: 50%;
+    height: 3px;
+    background-color: #E6401B;
+    position: absolute;
+    left: 100px;
+}
+
+.container-doacoes{
+    margin-top: 30px;
+    padding-left: 100px;
+}
+
+.container-doacoes h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container-doacoes label{
+    font-size: 70px;
+}
+
+.container-doacoes span{
+    font-size: 20px;
+}
+
+.container-bolas{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: -110px;
+}
+
+.container-bolas img{
+    width: 100%;
+    height: 100%;
+}
+
 /*footer*/
 footer{
-    font-family: 'inter', sans-serif;
+    position: absolute;
+    top:100px;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: medium;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 1px;
+    letter-spacing: 0,5px;
     width: 100%;
     color: white;
-    background-color: var(--mineshaft);
-    position: relative;
-    top: 1500px;
+    background-color: #446A5D;
 }
 /*contato*/
 .footer-link{
     text-decoration: none;
 }
 #footer-content{
-    background-color: var(--mineshaft);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 2rem 3.5rem;
     padding-top: 50px;
+    background-color: #446A5D;
 }
 #footer-contacts h1{
     margin-bottom: 0.75rem;
@@ -162,7 +282,7 @@ footer{
 
 }
 .footer-list .footer-link:hover{
-    color: var(--cinnabar);
+    color: var(--porshe);
 }
 .footer-list h3{
     font-size: 25px;
@@ -179,36 +299,11 @@ footer{
 #footer-subscriber p{
     color: var(--sarerac);
 }
-#input-group{
-    display: flex;
-    align-items: center;
-    background-color: #4c4849;
-    border-radius: 4px;
-}
-#input-group input{
-    all: unset;
-    padding: .75rem;
-    width: 100%;
-}
-#input-group button{
-    background-color: var(--cinnabar);
-    border: none;
-    color: white;
-    padding: 1.25rem;
-    font-size: 1.125rem;
-    height: 100%;
-    border: 0px 4px 4px 0px;
-    cursor: pointer;
-    transition: all 0.4s;
-}
-#input-group button:hover{
-    opacity: 0,5;
-}
 /*copyright*/
 #footer-copyright{
     display: flex;
     justify-content: center;
-    background-color: #4c4849;
+    background-color: #2e4d42;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
@@ -238,3 +333,4 @@ footer{
         padding: 3rem 2rem;
     } 
 }
+

@@ -1,0 +1,15 @@
+#fotopix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#foto {
+    text-align: center;
+}
+
+#foto img {
+    max-width: 100%;
+    max-height: 100%;
+}

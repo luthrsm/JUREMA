@@ -9,7 +9,37 @@
     <title>Escolaridade</title>
     <script>
         function assinar() {
-            window.location.href = "cadastro-estudante4.hmtl"
+            window.location.href = "cadastro-estudante4.html"
+        }
+        // function focado(){
+        //     document.getElementsByClassName('dropDown')[0].style.display = "block";
+        // }
+        // function desfoque(){
+        //     document.getElementsByClassName('dropDown')[0].style.display = "none"
+        // }
+        function dropdown(p) {
+            var e = document.getElementsByClassName('dropDown')[0];
+            var d = ['block', 'none'];
+
+            e.style.display = d[p];
+        }
+
+        function category(c) {
+            var item = document.getElementById('item-' + c).innerHTML;
+            document.getElementsByTagName('input')[0].value = item;
+
+        }
+
+        function dropdownt(p) {
+            var e = document.getElementsByClassName('dropDown2')[0];
+            var d = ['block', 'none'];
+
+            e.style.display = d[p];
+        }
+
+        function type(t) {
+            var item = document.getElementById('itemt-' + t).innerHTML;
+            document.getElementsByClassName('faculdade')[0].value = item;
         }
 
     </script>
@@ -17,19 +47,108 @@
         /*select*/
 
         .dropDown {
-            background-color: black;
             border-radius: 10px;
-            margin-top: 10px;
+            margin-top: -11px;
             height: 90px;
-            width: 400px;
+            width: 657px;
+            overflow: auto;
+            display: none;
+            box-shadow: 1px 1px 6px #0000001c;
         }
+
+        .dropDown2 {
+            border-radius: 10px;
+            margin-top: -11px;
+            height: 90px;
+            width: 657px;
+            overflow: auto;
+            display: none;
+            box-shadow: 1px 1px 6px #0000001c;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: rgb(122, 122, 122);
+            width: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(218, 213, 213);
+            border-radius: 5px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .item {
+            height: 35px;
+            padding: 0px 5px;
+            box-sizing: border-box;
+            transition: .3s;
+            cursor: pointer;
+            padding: 2px;
+            margin-left: 3px;
+            font-size: 0.8rem;
+        }
+
+        .item:hover {
+            background-color: rgb(218, 213, 213);
+            padding-left: 7px;
+            transition: .3s;
+        }
+
+        .itemt {
+            height: 40px;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: .3s;
+            cursor: pointer;
+            padding: 2px;
+            margin-left: 3px;
+            margin-top: 3px;
+            font-size: 0.8rem;
+            padding-top: 11px;
+        }
+
+        .itemt:hover {
+            background-color: rgb(218, 213, 213);
+            padding-left: 7px;
+            transition: .3s;
+        }
+
+        .declaracao-check{
+            position: relative;
+            top: -20px;
+        }
+
+        .declaracao-check p {
+            padding-top: 20px;
+            text-align: justify;
+            font-size: 13px;
+
+            font-weight:600;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .declaracao{
+            top: 37px !important;
+            left: 0px !important;
+            position: absolute;
+            cursor: pointer;
+        }
+
+
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="imgs/undraw_education_f8ru.svg" alt="">
+            <img src="./assets/imgs/undraw_education_f8ru.svg" alt="">
         </div>
         <div class="endereco">
             <div action="#">
@@ -41,54 +160,52 @@
 
                 <div class="input-box">
                     <label for="categoria">Situação Escolar</label>
-                    <input type="text" name="categoria" id="categoria" placeholder="Selecione a sua situação escolar."
+                    <input type="text" name="categoria" id="categoria" class="categoria"
+                        placeholder="Selecione a sua situação escolar." onFocus="dropdown(0)" onBlur="dropdown(1)"
                         required />
-                    <div class="dropDrown">
+                    <div class="dropDown">
                         <div class="listDropDown">
-                            <div class="item" id="item-1">Já concluí o ensino médio.</div>
-                            <div class="item" id="item-2">Estou cursando o último ano/série do ensino médio.</div>
-                            <div class="item" id="item-3">Estou cursando o ensino médio, mas não estou no último
+                            <div class="item" id="item-1" onmousedown="category(1)">Já concluí o ensino médio.</div>
+                            <div class="item" id="item-2" onmousedown="category(2)">Estou cursando o último ano/série do
+                                ensino médio.</div>
+                            <div class="item" id="item-3" onmousedown="category(3)">Estou cursando o ensino médio, mas
+                                não estou no último
                                 ano/série.</div>
-                            <div class="item" id="item-4">Já concluí o ensino superior.</div>
-                            <div class="item" id="item-5">Estou cursando o ensino superior.</div>
-                            <div class="item" id="item-6">Não estou cursando nem o ensino médio nem o ensino superior.
+                            <div class="item" id="item-4" onmousedown="category(4)">Já concluí o ensino superior.</div>
+                            <div class="item" id="item-5" onmousedown="category(5)">Estou cursando o ensino superior.
                             </div>
-                            <div class="item" id="item-7">Não estou cursando e não concluí o ensino médio.</div>
-                            <div class="item" id="item-8">Não estou cursando e não concluí o ensino superior.</div>
+                            <div class="item" id="item-6" onmousedown="category(6)">Não estou cursando nem o ensino
+                                médio nem o ensino superior.
+                            </div>
+                            <div class="item" id="item-7" onmousedown="category(7)">Não estou cursando e não concluí o
+                                ensino médio.</div>
+                            <div class="item" id="item-8" onmousedown="category(8)">Não estou cursando e não concluí o
+                                ensino superior.</div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="input-group">
-                    <div class="input-box">
-                        <label for="situEscolar">Situação escolar</label>
-                        <select id="situEscolar" name="situEscolar" class= "estilizar-select" required>
-                            <option value=""> </option>
-                            <option value="emComp"></option>
-                            <option value="emInc"></option>
-                            <option value="emInc2">
-                            </option>
-                            <option value="supComp"></option>
-                            <option value="supInc"></option>
-                            <option value="naoCur"></option>
-                            <option value="naoCurInc"></option>
-                            <option value="naoCurInc"></option>
-                        </select>
-                    </div> -->
 
                 <div class="input-box">
                     <label for="tipoEscola">Qual o tipo de escola/faculdade que você frequenta/frequentou?</label>
-                    <select id="tipoEscola" name="tipoEscola" class="estilizar-select" required>
-                        <option value=""> Selecione o tipo de escola/faculdade que você frequentou.</option>
-                        <option value="pub">Somente escola/faculdade pública.</option>
-                        <option value="pubprivsem">Parte em escola/faculdade pública parte em escola/faculdade
-                            privada SEM bolsa de estudo integral.</option>
-                        <option value="pubprivcom">Parte em escola/faculdade pública parte em escola/faculdade
-                            privada COM bolsa de estudo integral.</option>
-                        <option value="privsem">Somente em escola/faculdade privada SEM bolsa de estudo integral.
-                        </option>
-                        <option value="privcom">Somente em escola/faculdade privada COM bolsa de estudo integral.
-                        </option>
-                    </select>
+                    <input type="text" name="tipoEscola" id="faculdade" class="faculdade"
+                        placeholder="Selecione o tipo de escola/faculdade que você frequentou." onFocus="dropdownt(0)"
+                        onBlur="dropdownt(1)" required />
+                    <div class="dropDown2">
+                        <div class="listDropDown">
+                            <div class="itemt" id="itemt-1" onmousedown="type(1)">Somente escola/faculdade pública.
+                            </div>
+                            <div class="itemt" id="itemt-2" onmousedown="type(2)">Parte em escola/faculdade pública
+                                parte em escola/faculdade
+                                privada SEM bolsa de estudo integral.</div>
+                            <div class="itemt" id="itemt-3" onmousedown="type(3)">Parte em escola/faculdade pública
+                                parte em escola/faculdade
+                                privada COM bolsa de estudo integral.</div>
+                            <div class="itemt" id="itemt-4" onmousedown="type(4)">Somente em escola/faculdade privada
+                                SEM bolsa de estudo integral.</div>
+                            <div class="itemt" id="itemt-5" onmousedown="type(5)">Somente em escola/faculdade privada
+                                COM bolsa de estudo integral.</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="input-box">
@@ -102,10 +219,11 @@
             </div>
             <h4>Estudante, aceite as declarações abaixo antes de prosseguir.</h4>
             <div class="declaracao-check">
-                <input type="checkbox" name="declaracao" id="declaracao" onclick="HabiDsabi()">Confirmo que as
-                informações que declarei são verdadeiras. Estou Ciente de que poderei ser eliminado do processo
-                seletivo se for identificado que declarei alguma informação falsa e posso responder por crime contra
-                a fé pública, de acordo com o Código Penal Brasileiro.</input>
+                <input type="checkbox" name="declaracao" id="declaracao" class="declaracao" onclick="HabiDsabi()">
+                <p>Confirmo que as
+                    informações que declarei são verdadeiras. Estou ciente de que poderei ser eliminado do processo
+                    seletivo se for identificado que declarei alguma informação falsa e posso responder por crime contra
+                    a fé pública, de acordo com o Código Penal Brasileiro.</p></input>
             </div>
             <div class="continue-button">
                 <input type="button" class="button" name="continuar" id="continuar" value="Continuar"

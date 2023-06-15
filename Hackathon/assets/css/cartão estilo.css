@@ -1,0 +1,69 @@
+:root {
+  --porshe: #E6A35D;
+  --mineralgreen: #446A5D;
+  --cinnabar: #E6401B;
+  --sarerac: #FFF3E0;
+  --mineshaft: #383435;
+  --rodeodust: #C6AC9F;
+  --fonte-julius: 'Julius Sans One', sans-serif;
+}
+
+/*resetando as configurações padrao*/
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#titulo {
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+#forma {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  color: Black;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--porshe);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* #pagamento {
+  background-image: url(/assets/imgs/fundo-login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+#titulo {
+  font-family: Playlist Script;
+  color: #446A5D;
+  font-size: 350%;
+  font-weight: 350%;
+}

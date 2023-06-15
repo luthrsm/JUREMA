@@ -1,96 +1,102 @@
   #botao5 {
-  background-color: #C5C5BC;
-  color: #1B372D;
-  border: none;
-  border-radius: 60px; 
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: bold;
-  display: inline-block;
-  font-size: 16px;
-  cursor:pointer;
-  width: 200px;
-  height: 50px;
-}
-    #botao10 {
-  background-color: #C5C5BC;
-  color: #1B372D;
-  border: none;
-  border-radius: 60px; 
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: bold;
-  display: inline-block;
-  font-size: 16px;
-  cursor:pointer;
-  width: 200px;
-  height: 50px;
-}
-    #botao20{
-  background-color: #C5C5BC;
-  color: #1B372D;
-  border: none;
-  border-radius: 60px; 
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: bold;
-  display: inline-block;
-  font-size: 16px;
-  cursor:pointer;
-  width: 200px;
-  height: 50px;
-}
-    #botao50 {
-  background-color: #C5C5BC;
-  color: #1B372D;
-  border: none;
-  border-radius: 60px;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: bold;
-  display: inline-block;
-  font-size: 16px;
-  cursor:pointer;
-  width: 200px;
-  height: 50px;
-}
-    #botaooutro {
-  background-color: #C5C5BC;
-  color: #1B372D;
-  border: none;
-  border-radius: 60px; 
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: bold;
-  display: inline-block;
-  font-size: 16px;
-  cursor:pointer;
-  width: 200px;
-  height: 50px;
-}
-    #doe {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #446A5D;
-}
-    #botoes {
+    background-color: #C5C5BC;
+    color: #1B372D;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+  }
+
+  #botao10 {
+    background-color: #C5C5BC;
+    color: #1B372D;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+  }
+
+  #botao20 {
+    background-color: #C5C5BC;
+    color: #1B372D;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+  }
+
+  #botao50 {
+    background-color: #C5C5BC;
+    color: #1B372D;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+  }
+
+  #botaooutro {
+    background-color: #C5C5BC;
+    color: #1B372D;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+  }
+
+  #doe {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #446A5D;
+  }
+
+  #botoes {
     height: 100%;
     margin: 0;
-}
-      #botoes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; 
-      }
+  }
 
-      #botoes > div {
-        text-align: center;
- }
-      body {
-        background-image: url(./imgs/fundo-login.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
+  #botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
+  #botoes>div {
+    text-align: center;
+  }
 
+  #doacao {
+    background-image: url(/assets/imgs/fundo-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }

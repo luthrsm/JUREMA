@@ -1,436 +1,463 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" type = "text/css" href = "./css/hackathon.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/compra.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/login.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/pagInicial.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/estudante.css">
-        <link rel = "stylesheet" type = "text/css" href = "./css/doador.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <title>Compra</title>
-    </head>
-    <body>
 
-        <nav id="menu-h">
-            <ul>
-                <li id="logo-nav">
-                    <img src="../imgs/logo-provisória.png" alt="" srcset="">
-                </li>
-                <li>
-                    <a href= "inicio.html">Página Inicial</a>
-                </li>
-                <li>
-                    <a href= "#">Livros</a>
-                    <ul>
-                        <li><a href= "#">Vestibular</a></li>
-                        <li><a href= "#">Medicina</a></li>
-                        <li><a href= "#">TI</a></li>
-                        <li><a href= "#">Letras</a></li>
-                        <li><a href= "#">Engenharia</a></li>
-                        <li><a href= "#">Pedagogia</a></li>
-                        <li><a href= "#">História</a></li>
-                    </ul>
-                </li>
-                <li>
-                        <a href= "doacao.html">Doações</a>
-                </li>
-                <li>
-                    <a href= "#">Saiba Mais</a>
-                    <ul>
-                        <li><a href= "#">Quem somos?</a></li>
-                        <li><a href= "#">Propósito</a></li>
-                        <li><a href= "#">Como ajudar?</a></li>
-                        <li><a href= "#">Como participar?</a></li>
-                    </ul>
-                </li>
-                <li id="entrar">
-                    <a href= "login.html">Entrar</a>
-                </li>
-            </ul>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/compra.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/doadorestilos.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/estudante.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/hackathon.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/login.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/pagInicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Compra</title>
+</head>
 
-        <main>
-            <div id="categoria">
-                <h1>categorias</h1>
-                <div id="menuCateg" class="container">
-                    <div id="categ">
-                        <a href="vestibular.html">
-                            <p>Vestibular</p>
-                        </a>
-                    </div>
-                    <div id="categ">
-                        <a href="medicina.html">
-                            <p>Medicina</p>
-                        </a>
-                    </div>
-                    <div id="categ">
-                        <a href="ti.html">
-                            <p>TI</p>
-                        </a>
-                    </div>
-                    <div id="categ">
-                        <a href="letras.html">
-                            <p>Letras</p>
-                        </a>
-                    </div>
-                    <div id="categ">
-                        <a href="engenharia.html">
-                            <p>Engenharia</p>
-                        </a>
-                    </div>
-                    <div id="categ">
-                        <a href="pedagogia.html">
-                            <p>Pedagogia</p>
-                        </a>
-                    </div>
-                    <div id="categ">
-                        <a href="história.html">
-                            <p>História</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-livros" id="todos">
-                <div id="individual-box1">
-                    <a href="">
-                        <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt="" id="individual1">
-                        <div id="texto-individual1">
-                            <p>Capitães de Areiaㅤㅤㅤﾠ</p>
-                            <p>Jorge Amado</p>
-                            <h6>R$ 32,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
+<body>
+
+    <nav id="menu-h">
+        <ul>
+            <li id="logo-nav">
+                <img src="assets/imgs/logo.png" alt="" srcset="">
+            </li>
+            <li>
+                <a href="inicio.html">Página Inicial</a>
+            </li>
+            <li>
+                <a href="#">Livros</a>
+                <ul>
+                    <li><a href="#">Vestibular</a></li>
+                    <li><a href="#">Medicina</a></li>
+                    <li><a href="#">TI</a></li>
+                    <li><a href="#">Letras</a></li>
+                    <li><a href="#">Engenharia</a></li>
+                    <li><a href="#">Pedagogia</a></li>
+                    <li><a href="#">História</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="doacao.html">Doações</a>
+            </li>
+            <li>
+                <a href="#">Saiba Mais</a>
+                <ul>
+                    <li><a href="#">Quem somos?</a></li>
+                    <li><a href="#">Propósito</a></li>
+                    <li><a href="#">Como ajudar?</a></li>
+                    <li><a href="#">Como participar?</a></li>
+                </ul>
+            </li>
+            <li id="entrar">
+                <a href="login.html">Entrar</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="categoria">
+            <h1>categorias</h1>
+            <div id="menuCateg" class="container">
+                <div id="categ">
+                    <a href="vestibular.html">
+                        <p>Vestibular</p>
                     </a>
                 </div>
-                <div id="individual-box2">
-                    <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual2">
-                        <div id="texto-individual2">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
+                <div id="categ">
+                    <a href="medicina.html">
+                        <p>Medicina</p>
                     </a>
                 </div>
-                <div id="individual-box3">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual3">
-                        <div id="texto-individual3">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
+                <div id="categ">
+                    <a href="ti.html">
+                        <p>TI</p>
                     </a>
                 </div>
-                <div id="individual-box4">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt="" id="individual4">
-                        <div id="texto-individual4">
-                            <p>Introdução à engenharia mecânica</p>
-                            <p>Jonathan Wickert e Kemper Lewis</p>
-                            <h6>R$ 106,00</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
+                <div id="categ">
+                    <a href="letras.html">
+                        <p>Letras</p>
                     </a>
                 </div>
-                <div id="individual-box5">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt="" id="individual5">
-                        <div id="texto-individual5">
-                            <p>HTML5 e CSS3: guia prático e visual</p>
-                            <p>Elizabeth Castro e Bruce Hyslop</p>
-                            <h6>R$ 106,20</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
+                <div id="categ">
+                    <a href="engenharia.html">
+                        <p>Engenharia</p>
                     </a>
                 </div>
-                <div id="individual-box6">
-                    <a href="">
-                        <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt="" id="individual6">
-                        <div id="texto-individual6">
-                            <p>Capitães de Areiaㅤㅤㅤﾠ</p>
-                            <p>Jorge Amado</p>
-                            <h6>R$ 32,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
+                <div id="categ">
+                    <a href="pedagogia.html">
+                        <p>Pedagogia</p>
                     </a>
                 </div>
-                <div id="individual-box7">
-                    <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual7">
-                        <div id="texto-individual7">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box8">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual8">
-                        <div id="texto-individual8">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box9">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt="" id="individual9">
-                        <div id="texto-individual9">
-                            <p>Introdução à engenharia mecânica</p>
-                            <p>Jonathan Wickert e Kemper Lewis</p>
-                            <h6>R$ 106,00</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box10">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt="" id="individual10">
-                        <div id="texto-individual10">
-                            <p>HTML5 e CSS3: guia prático e visual</p>
-                            <p>Elizabeth Castro e Bruce Hyslop</p>
-                            <h6>R$ 106,20</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box11">
-                    <a href="">
-                        <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt="" id="individual11">
-                        <div id="texto-individual11">
-                            <p>Capitães de Areiaㅤㅤㅤﾠ</p>
-                            <p>Jorge Amado</p>
-                            <h6>R$ 32,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box12">
-                    <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual12">
-                        <div id="texto-individual12">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box13">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual13">
-                        <div id="texto-individual13">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box14">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt="" id="individual14">
-                        <div id="texto-individual14">
-                            <p>Introdução à engenharia mecânica</p>
-                            <p>Jonathan Wickert e Kemper Lewis</p>
-                            <h6>R$ 106,00</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box15">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt="" id="individual15">
-                        <div id="texto-individual15">
-                            <p>HTML5 e CSS3: guia prático e visual</p>
-                            <p>Elizabeth Castro e Bruce Hyslop</p>
-                            <h6>R$ 106,20</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box16">
-                    <a href="">
-                        <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt="" id="individual16">
-                        <div id="texto-individual16">
-                            <p>Capitães de Areiaㅤㅤㅤﾠ</p>
-                            <p>Jorge Amado</p>
-                            <h6>R$ 32,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box17">
-                    <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual17">
-                        <div id="texto-individual17">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box18">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual18">
-                        <div id="texto-individual18">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box19">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt="" id="individual19">
-                        <div id="texto-individual19">
-                            <p>Introdução à engenharia mecânica</p>
-                            <p>Jonathan Wickert e Kemper Lewis</p>
-                            <h6>R$ 106,00</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box20">
-                    <a href="">
-                        <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357" alt="" id="individual20">
-                        <div id="texto-individual20">
-                            <p>Alfabetização e letramento</p>
-                            <p>Magda Soares</p>
-                            <h6>R$ 36,30</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
-                    </a>
-                </div>
-                <div id="individual-box21">
-                    <a href="">
-                        <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="" id="individual21">
-                        <div id="texto-individual21">
-                            <p>Atlas de anatomia humana</p>
-                            <p>Frank H. Netter, MD</p>
-                            <h6>R$ 489,99</h6>
-                            <input type="button" value="comprar" class="comprar"/>
-                            <input type="button" value="doar" class="doar"/>
-                        </div>
+                <div id="categ">
+                    <a href="história.html">
+                        <p>História</p>
                     </a>
                 </div>
             </div>
-            <div class="container" id="pagination">
-                <button class="button" disabled>
-                    <i class="fa-solid fa-angles-left"></i>
-                </button>
-                <button class="button" disabled>
-                    <i class="fa-solid fa-angle-left"></i>
-                </button>
+        </div>
+        <div class="container-livros" id="todos">
+            <div id="individual-box1">
+                <a href="">
+                    <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt=""
+                        id="individual1">
+                    <div id="texto-individual1">
+                        <p>Capitães de Areiaㅤㅤㅤﾠ</p>
+                        <p>Jorge Amado</p>
+                        <h6>R$ 32,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box2">
+                <a href="">
+                    <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357"
+                        alt="" id="individual2">
+                    <div id="texto-individual2">
+                        <p>Alfabetização e letramento</p>
+                        <p>Magda Soares</p>
+                        <h6>R$ 36,30</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box3">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg"
+                        alt="" id="individual3">
+                    <div id="texto-individual3">
+                        <p>Atlas de anatomia humana</p>
+                        <p>Frank H. Netter, MD</p>
+                        <h6>R$ 489,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box4">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt=""
+                        id="individual4">
+                    <div id="texto-individual4">
+                        <p>Introdução à engenharia mecânica</p>
+                        <p>Jonathan Wickert e Kemper Lewis</p>
+                        <h6>R$ 106,00</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box5">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt=""
+                        id="individual5">
+                    <div id="texto-individual5">
+                        <p>HTML5 e CSS3: guia prático e visual</p>
+                        <p>Elizabeth Castro e Bruce Hyslop</p>
+                        <h6>R$ 106,20</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box6">
+                <a href="">
+                    <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt=""
+                        id="individual6">
+                    <div id="texto-individual6">
+                        <p>Capitães de Areiaㅤㅤㅤﾠ</p>
+                        <p>Jorge Amado</p>
+                        <h6>R$ 32,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box7">
+                <a href="">
+                    <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357"
+                        alt="" id="individual7">
+                    <div id="texto-individual7">
+                        <p>Alfabetização e letramento</p>
+                        <p>Magda Soares</p>
+                        <h6>R$ 36,30</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box8">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg"
+                        alt="" id="individual8">
+                    <div id="texto-individual8">
+                        <p>Atlas de anatomia humana</p>
+                        <p>Frank H. Netter, MD</p>
+                        <h6>R$ 489,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box9">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt=""
+                        id="individual9">
+                    <div id="texto-individual9">
+                        <p>Introdução à engenharia mecânica</p>
+                        <p>Jonathan Wickert e Kemper Lewis</p>
+                        <h6>R$ 106,00</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box10">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt=""
+                        id="individual10">
+                    <div id="texto-individual10">
+                        <p>HTML5 e CSS3: guia prático e visual</p>
+                        <p>Elizabeth Castro e Bruce Hyslop</p>
+                        <h6>R$ 106,20</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box11">
+                <a href="">
+                    <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt=""
+                        id="individual11">
+                    <div id="texto-individual11">
+                        <p>Capitães de Areiaㅤㅤㅤﾠ</p>
+                        <p>Jorge Amado</p>
+                        <h6>R$ 32,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box12">
+                <a href="">
+                    <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357"
+                        alt="" id="individual12">
+                    <div id="texto-individual12">
+                        <p>Alfabetização e letramento</p>
+                        <p>Magda Soares</p>
+                        <h6>R$ 36,30</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box13">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg"
+                        alt="" id="individual13">
+                    <div id="texto-individual13">
+                        <p>Atlas de anatomia humana</p>
+                        <p>Frank H. Netter, MD</p>
+                        <h6>R$ 489,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box14">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt=""
+                        id="individual14">
+                    <div id="texto-individual14">
+                        <p>Introdução à engenharia mecânica</p>
+                        <p>Jonathan Wickert e Kemper Lewis</p>
+                        <h6>R$ 106,00</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box15">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41mzPVlkxQL._SX380_BO1,204,203,200_.jpg" alt=""
+                        id="individual15">
+                    <div id="texto-individual15">
+                        <p>HTML5 e CSS3: guia prático e visual</p>
+                        <p>Elizabeth Castro e Bruce Hyslop</p>
+                        <h6>R$ 106,20</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box16">
+                <a href="">
+                    <img src="https://caminhodaleitura.com.br/uploads/produto_fotos/20171207100558_450.jpg" alt=""
+                        id="individual16">
+                    <div id="texto-individual16">
+                        <p>Capitães de Areiaㅤㅤㅤﾠ</p>
+                        <p>Jorge Amado</p>
+                        <h6>R$ 32,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box17">
+                <a href="">
+                    <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357"
+                        alt="" id="individual17">
+                    <div id="texto-individual17">
+                        <p>Alfabetização e letramento</p>
+                        <p>Magda Soares</p>
+                        <h6>R$ 36,30</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box18">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg"
+                        alt="" id="individual18">
+                    <div id="texto-individual18">
+                        <p>Atlas de anatomia humana</p>
+                        <p>Frank H. Netter, MD</p>
+                        <h6>R$ 489,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box19">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/51PUNFJJz8L._SX344_BO1,204,203,200_.jpg" alt=""
+                        id="individual19">
+                    <div id="texto-individual19">
+                        <p>Introdução à engenharia mecânica</p>
+                        <p>Jonathan Wickert e Kemper Lewis</p>
+                        <h6>R$ 106,00</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box20">
+                <a href="">
+                    <img src="https://img.imageboss.me/revista-cdn/cdn/20788/656e02412109d8d0890a876cd0591ce92cdd3a0a.jpg?1562259357"
+                        alt="" id="individual20">
+                    <div id="texto-individual20">
+                        <p>Alfabetização e letramento</p>
+                        <p>Magda Soares</p>
+                        <h6>R$ 36,30</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+            <div id="individual-box21">
+                <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41IPuRFETdL._SX258_BO1,204,203,200_QL70_ML2_.jpg"
+                        alt="" id="individual21">
+                    <div id="texto-individual21">
+                        <p>Atlas de anatomia humana</p>
+                        <p>Frank H. Netter, MD</p>
+                        <h6>R$ 489,99</h6>
+                        <input type="button" value="comprar" class="comprar" />
+                        <input type="button" value="doar" class="doar" />
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container" id="pagination">
+            <button class="button" disabled>
+                <i class="fa-solid fa-angles-left"></i>
+            </button>
+            <button class="button" disabled>
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
 
-                <div class="links">
+            <div class="links">
                 <a href="" class="link active">1</a>
                 <a href="" class="link">2</a>
                 <a href="" class="link">3</a>
                 <a href="" class="link">4</a>
                 <a href="" class="link">5</a>
-                </div>
+            </div>
 
-                <button class="button">
-                    <i class="fa-solid fa-angles-right"></i>
-                </button>
-                <button class="button">
-                    <i class="fa-solid fa-angle-right"></i>
-                </button>
-            </div>
-        </main>
+            <button class="button">
+                <i class="fa-solid fa-angles-right"></i>
+            </button>
+            <button class="button">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+        </div>
+    </main>
 
-        <footer>
-            <div id="footer-content">
-                <div id="footer-contacts">
-                    <h1><img src="../imgs/logo-provisória.png" id="logo-footer">BOOKSHELF</h1>
-                    <p>“Educação não transforma o mundo. Educação muda as pessoas. Pessoas transformam o mundo.” — Paulo Freire</p>
-                </div>
-                <ul class="footer-list">
-                    <li>
-                        <h3> Navegue pelo site!</h3>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Livros</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Doações</a>
-                    </li>
-                    <li>
-                        <a href="login.html" class="footer-link">Perfil</a>
-                    </li>
-                </ul>
-                <ul class="footer-list">
-                    <li>
-                        <h3>Saiba Mais</h3>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Quem somos?</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Propósito</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Como ajudar?</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer-link">Como Participar?</a>
-                    </li>
-                </ul>
-                <div id="footer-subscriber">
-                    <h3>Entre em contato conosco!</h3>
-                    <p> asdghasdhaoishdaoihiahodihaohdaoshdoah</p>
-                    <div id="footer-social-media">
-                        <a href="#" class="footer-link" id="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="footer-link" id="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="footer-link" id="whatsapp">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
+    <footer>
+        <div id="footer-content">
+            <div id="footer-contacts">
+                <h1><img src="assets/imgs/logo.png" id="logo-footer">JUREMA</h1>
+                <p>“Educação não transforma o mundo. Educação muda as pessoas. Pessoas transformam o mundo.” — Paulo
+                    Freire</p>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3> Navegue pelo site!</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Livros</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Doações</a>
+                </li>
+                <li>
+                    <a href="login.html" class="footer-link">Perfil</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Saiba Mais</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Quem somos?</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Propósito</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Como ajudar?</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Como Participar?</a>
+                </li>
+            </ul>
+            <div id="footer-subscriber">
+                <h3>Entre em contato conosco!</h3>
+                <p> asdghasdhaoishdaoihiahodihaohdaoshdoah</p>
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
-            <div id="footer-copyright">
-                &#169
-                2023 all rights reserved
-            </div>
-        </footer>
-    </body>
+        </div>
+        <div id="footer-copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+</body>
+
 </html>
